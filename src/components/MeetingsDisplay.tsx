@@ -8,12 +8,26 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import {
-  Origami,
-  LibraryBig,
-  Users,
-  Cctv,
-  Briefcase,
-  Scale,
+  Crown, // Direction
+  Briefcase, // Production (keeping original)
+  FileText, // Script
+  Camera, // Camera
+  Lightbulb, // Lighting
+  Volume2, // Sound
+  Music, // Music
+  Palette, // Art
+  Shirt, // Costume
+  Scissors, // Makeup And Hair
+  MapPin, // Location
+  Truck, // Transport
+  Shield, // Safety And Medical
+  Zap, // Stunt And Action
+  Film, // Editing
+  Sparkles, // Special Effects SFX
+  Users, // Cast-Artist (keeping original)
+  ChefHat, // Catering
+  Monitor, // Post-Production
+  Music4, // Choreography
 } from 'lucide-react';
 import { getUserInfo } from '@/utils/sessionStorage';
 import MeetingPopup from './MeetingPopup';
@@ -21,45 +35,144 @@ import MeetingPopup from './MeetingPopup';
 const meetings = [
   {
     id: 1,
-    title: 'Team Standup',
-    description: 'Daily Team Synchronization',
-    icon: Users,
+    title: 'Direction',
+    description: 'Direction Department',
+    icon: Crown,
     color: 'bg-blue-500',
   },
   {
     id: 2,
-    title: 'Production Team Review',
-    description: 'Weekly Project Progress Review',
+    title: 'Production',
+    description: 'Production Department',
     icon: Briefcase,
     color: 'bg-green-500',
   },
   {
     id: 3,
-    title: 'Finance And Legal Team',
-    description: 'Manages Contracts, Rights, Royalties',
-    icon: Scale,
+    title: 'Script',
+    description: 'Script Department',
+    icon: FileText,
     color: 'bg-purple-500',
   },
   {
     id: 4,
-    title: 'Costume Department',
-    description: 'Designs And Manages Wardrobe For Characters',
-    icon: Origami,
+    title: 'Camera',
+    description: 'Camera Department',
+    icon: Camera,
     color: 'bg-orange-500',
   },
   {
     id: 5,
-    title: 'Script Supervisors',
-    description: 'Tracks Continuity And Script Details',
-    icon: LibraryBig,
+    title: 'Lighting',
+    description: 'Lighting Department',
+    icon: Lightbulb,
     color: 'bg-amber-500',
   },
   {
     id: 6,
-    title: 'Security And Safety Team',
-    description: 'Strategic Planning Session',
-    icon: Cctv,
+    title: 'Sound',
+    description: 'Sound Department',
+    icon: Volume2,
     color: 'bg-red-500',
+  },
+  {
+    id: 7,
+    title: 'Music',
+    description: 'Music Department',
+    icon: Music,
+    color: 'bg-pink-500',
+  },
+  {
+    id: 8,
+    title: 'Art',
+    description: 'Art Department',
+    icon: Palette,
+    color: 'bg-indigo-500',
+  },
+  {
+    id: 9,
+    title: 'Costume',
+    description: 'Costume Department',
+    icon: Shirt,
+    color: 'bg-teal-500',
+  },
+  {
+    id: 10,
+    title: 'Makeup And Hair',
+    description: 'Makeup And Hair Department',
+    icon: Scissors,
+    color: 'bg-rose-500',
+  },
+  {
+    id: 11,
+    title: 'Location',
+    description: 'Location Department',
+    icon: MapPin,
+    color: 'bg-emerald-500',
+  },
+  {
+    id: 12,
+    title: 'Transport',
+    description: 'Transport & Logistics Department',
+    icon: Truck,
+    color: 'bg-gray-500',
+  },
+  {
+    id: 13,
+    title: 'Safety And Medical',
+    description:
+      'Safety, Fire & Medical Department (Including Doctor & Ambulance) Department',
+    icon: Shield,
+    color: 'bg-green-600',
+  },
+  {
+    id: 14,
+    title: 'Stunt And Action',
+    description: 'Stunt & Action Department',
+    icon: Zap,
+    color: 'bg-yellow-500',
+  },
+  {
+    id: 15,
+    title: 'Editing',
+    description: 'Editing Department',
+    icon: Film,
+    color: 'bg-violet-500',
+  },
+  {
+    id: 16,
+    title: 'Special Effects SFX',
+    description: 'Special Effects Department',
+    icon: Sparkles,
+    color: 'bg-cyan-500',
+  },
+  {
+    id: 17,
+    title: 'Cast-Artist',
+    description: 'Cast/Artist Department',
+    icon: Users,
+    color: 'bg-blue-600',
+  },
+  {
+    id: 18,
+    title: 'Catering',
+    description: 'Catering Department',
+    icon: ChefHat,
+    color: 'bg-orange-600',
+  },
+  {
+    id: 19,
+    title: 'Post-Production',
+    description: 'Post-Production Department',
+    icon: Monitor,
+    color: 'bg-slate-500',
+  },
+  {
+    id: 20,
+    title: 'Choreography',
+    description: 'Choreography Department',
+    icon: Music4,
+    color: 'bg-fuchsia-500',
   },
 ];
 
